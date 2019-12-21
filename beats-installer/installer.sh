@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#https://kvz.io/bash-best-practices.html
-
 
 arg1="${1:-}"
 arg2="${2:-}"
