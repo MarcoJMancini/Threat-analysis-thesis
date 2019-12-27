@@ -7,10 +7,10 @@ arg2="${2:-}"
 echo "arg1 " $arg1
 echo "arg2 " $arg2
 
-if [ -z "$arg1"  ]
-then
-  echo "No parameter set. Options are [setup <server>, install, start]"
-else
+      if [ -z "$arg1"  ]
+      then
+        echo "No parameter set. Options are [setup <server>, install, start]"
+      else
 
       if [ $arg1 = "install" ]
       then
