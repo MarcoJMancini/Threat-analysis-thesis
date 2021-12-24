@@ -26,6 +26,6 @@ apt-get install osquery -y
 
 
 id=$(($RANDOM*$RANDOM))
- --modules system,osquery  &
+filebeat  -E cloud.id=$cloud_id -E cloud.auth=$cloud_auth   -E tags="[$id]"  --modules system,osquery  &
 packetbeat  -E cloud.id=$cloud_id -E cloud.auth=$cloud_auth   -E tags="[$id]"   &
 auditbeat -E cloud.id=$cloud_id -E cloud.auth=$cloud_auth   -E tags="[$id]"  &
